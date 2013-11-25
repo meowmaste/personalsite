@@ -65,10 +65,10 @@ transition: right 1.5s, left 1.5s;
 	position: absolute;
 	bottom: 0;
 	left: -10%;
-  -webkit-animation: spin 120s infinite linear; /* Safari 4+ */
-  -moz-animation:    spin 120s infinite linear; /* Fx 5+ */
-  -o-animation:      spin 120s infinite linear; /* Opera 12+ */
-  animation:         spin 120s infinite linear; /* IE 10+ */
+  -webkit-animation: spin 200s infinite linear; /* Safari 4+ */
+  -moz-animation:    spin 200s infinite linear; /* Fx 5+ */
+  -o-animation:      spin 200s infinite linear; /* Opera 12+ */
+  animation:         spin 200s infinite linear; /* IE 10+ */
 }
  #sun p {
  	position: relative;
@@ -318,4 +318,13 @@ transition: right 1.5s, left 1.5s;
 	border-radius: 15px;
 	position: relative;
 	top: 75px;
+}
+
+.flying-comet {
+  position:absolute;
+  top:0;
+  left:0px;
+  width:353px;
+  height:339px;
+  background: transparent url('../img/comet.png') no-repeat center center;
 }
