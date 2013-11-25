@@ -11,7 +11,27 @@ p{
 img {
 transition: right 1.5s, left 1.5s;
 -webkit-transition: right 1.5s, left 1.5s; /* Safari */]
+}
 
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 .topsun {
@@ -45,6 +65,10 @@ transition: right 1.5s, left 1.5s;
 	position: absolute;
 	bottom: 0;
 	left: -10%;
+  -webkit-animation: spin 120s infinite linear; /* Safari 4+ */
+  -moz-animation:    spin 120s infinite linear; /* Fx 5+ */
+  -o-animation:      spin 120s infinite linear; /* Opera 12+ */
+  animation:         spin 120s infinite linear; /* IE 10+ */
 }
  #sun p {
  	position: relative;
