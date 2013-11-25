@@ -1,0 +1,26 @@
+body {
+	font-family: serif;
+	color: #ffce00;
+	background: #b00024 url("../img/old_moon.png") repeat;
+	background-size: 33%;
+	padding-top: 100px;
+}
+
+#title {
+	background: black url("../img/twinkle_twinkle.png") repeat;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	text-align: center;
+	color: lightgrey;
+	font-size: 24px;
+}
+#title a {
+	color: white;
+}
+
+#wickerdicker {
+	display: block;
+	margin: 0 auto;
+}
